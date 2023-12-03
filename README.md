@@ -8,6 +8,7 @@ Swedish Qwerty for now.
 - [x] match shift, ctrl, alt, option as I'm used to
 - [x] Backspace in normal upper right
 - [x] å ä ö 
+- [ ] arrows
 - [ ] Think about how I want symbol layers
 - [ ] home row mods?
 - [ ] Lock key
