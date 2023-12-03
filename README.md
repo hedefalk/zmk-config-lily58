@@ -10,3 +10,5 @@ Swedish Qwerty for now.
 - [x] å ä ö 
 - [ ] Think about how I want symbol layers
 - [ ] home row mods?
+- [ ] Lock key
+- [ ]
