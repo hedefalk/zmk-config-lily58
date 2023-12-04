@@ -26,3 +26,14 @@ Swedish Qwerty for now.
       Board-ID: nRF52840-nicenano
       SoftDevice: S140 version 6.1.1
       Date: Jun 19 2021
+
+
+### On the MacBook Air
+
+<img width="290" alt="image" src="https://github.com/hedefalk/zmk-config-lily58/assets/116520/93cee6ed-0a85-4d0e-8b78-681de0c8c6c4">
+
+But when dragging a file over, three things happens at once:
+
+<img width="825" alt="image" src="https://github.com/hedefalk/zmk-config-lily58/assets/116520/c0a5301b-28ee-40c9-bb1a-f6233c181665">
+
+and no update is done :(
