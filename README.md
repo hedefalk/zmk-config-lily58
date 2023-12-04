@@ -28,7 +28,14 @@ Swedish Qwerty for now.
       SoftDevice: S140 version 6.1.1
       Date: Jun 19 2021
 
-    Looking at https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases
+    I think I just did from https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases:
+
+
+      UF2 Bootloader 0.8.0 lib/nrfx (v2.0.0) lib/tinyusb (0.12.0-145-g9775e7691) lib/uf2 (remotes/origin/configupdate-9-gadbb8c7)
+      Model: nice!nano
+      Board-ID: nRF52840-nicenano
+      Date: Sep 29 2023
+      SoftDevice: S140 6.1.1
   
 ### On the MacBook Air
 
