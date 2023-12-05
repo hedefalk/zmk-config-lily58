@@ -8,7 +8,11 @@ Swedish Qwerty for now.
 - [x] match shift, ctrl, alt, option as I'm used to
 - [x] Backspace in normal upper right
 - [x] å ä ö 
-- [ ] arrows
+- [x] arrows
+- [x] remove backspace on thumb
+- [x] keep shift on left on raise layer
+- [x] add quote and question mark to raise
+- [ ] escape not working?
 - [ ] Think about how I want symbol layers
 - [ ] home row mods?
 - [ ] Lock key
@@ -16,7 +20,7 @@ Swedish Qwerty for now.
 
 
 ## Issues
-- [ ] I'm having problems with the bootloader I think. NiceNano clones from https://www.aliexpress.com/item/1005006076173222.html?spm=a2g0o.order_list.order_list_main.119.4e981802ffEh3T
+- [x] I'm having problems with the bootloader I think. NiceNano clones from https://www.aliexpress.com/item/1005006076173222.html?spm=a2g0o.order_list.order_list_main.119.4e981802ffEh3T
 
     On my MacStudio I could never get it up as an USB flash drive, it just disconnects straight after double tapping reset. On the MacBook Air I actually did flash it _a couple_ of times by simply dragging to the usb drive, but now I can't seem to do it anymore.
   
@@ -36,7 +40,7 @@ Swedish Qwerty for now.
       Board-ID: nRF52840-nicenano
       Date: Sep 29 2023
       SoftDevice: S140 6.1.1
-  
+
 ### On the MacBook Air
 
 <img width="290" alt="image" src="https://github.com/hedefalk/zmk-config-lily58/assets/116520/93cee6ed-0a85-4d0e-8b78-681de0c8c6c4">
