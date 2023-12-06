@@ -55,6 +55,7 @@ and no update is done :(
 ## Karabiner EventViewer
 Use Karabiner EventViewer to find keycodes of everything I'm used to from another keyboard as well as this one while iterating keymaps
 
+
 ## Lock cmd:
 This is the lock combo as programmed on logitech keyboard:
 
