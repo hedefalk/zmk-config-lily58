@@ -50,3 +50,55 @@ But when dragging a file over, three things happens at once:
 <img width="825" alt="image" src="https://github.com/hedefalk/zmk-config-lily58/assets/116520/c0a5301b-28ee-40c9-bb1a-f6233c181665">
 
 and no update is done :(
+
+
+## Karabiner EventViewer
+Use Karabiner EventViewer to find keycodes of everything I'm used to from another keyboard as well as this one while iterating keymaps
+
+## Lock cmd:
+This is the lock combo as programmed on logitech keyboard:
+
+    [
+      {
+        "type": "down",
+        "name": {"key_code":"left_command"},
+        "usagePage": "7 (0x0007)",
+        "usage": "227 (0x00e3)",
+        "misc": "flags left_command"
+      },
+      {
+        "type": "down",
+        "name": {"key_code":"left_control"},
+        "usagePage": "7 (0x0007)",
+        "usage": "224 (0x00e0)",
+        "misc": "flags left_command,left_control"
+      },
+      {
+        "type": "down",
+        "name": {"key_code":"q"},
+        "usagePage": "7 (0x0007)",
+        "usage": "20 (0x0014)",
+        "misc": "flags left_command,left_control"
+      },
+      {
+        "type": "up",
+        "name": {"key_code":"q"},
+        "usagePage": "7 (0x0007)",
+        "usage": "20 (0x0014)",
+        "misc": "flags left_command,left_control"
+      },
+      {
+        "type": "up",
+        "name": {"key_code":"left_control"},
+        "usagePage": "7 (0x0007)",
+        "usage": "224 (0x00e0)",
+        "misc": "flags left_command"
+      },
+      {
+        "type": "up",
+        "name": {"key_code":"left_command"},
+        "usagePage": "7 (0x0007)",
+        "usage": "227 (0x00e3)",
+        "misc": ""
+      },
+    
