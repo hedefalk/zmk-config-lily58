@@ -72,11 +72,14 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_lock    {
+
+        combo_lock {
             timeout-ms = <50>;
             key-positions = <0 11>;
+
             //bindings = <&kp LOCK>; // Windows
-            bindings = <&kp LGUI &kp LCTRL &kp Q>; // Mac
+
+            bindings = <&kp LG(LC(Q))>; // Mac
         };
     };
 };
