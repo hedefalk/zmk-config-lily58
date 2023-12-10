@@ -12,7 +12,7 @@ Swedish Qwerty for now.
 - [x] remove backspace on thumb
 - [x] keep shift on left on raise layer
 - [x] add quote and question mark to raise
-- [ ] escape not working?
+- [x] escape not working? hardware, bent pin
 - [ ] Think about how I want symbol layers
 - [ ] home row mods?
 - [ ] Lock key
