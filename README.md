@@ -13,9 +13,10 @@ Swedish Qwerty for now.
 - [x] keep shift on left on raise layer
 - [x] add quote and question mark to raise
 - [x] escape not working? hardware, bent pin
+- [x] Lock key
+- [ ] numpad
 - [ ] Think about how I want symbol layers
 - [ ] home row mods?
-- [ ] Lock key
 
 
 
