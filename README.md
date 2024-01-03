@@ -4,6 +4,10 @@ This is my ZMK config for my Lily58 keyboard.
 
 Swedish Qwerty for now.
 
+
+<img src="keymap-drawer/lily58.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
+
+
 ## TODO
 - [x] match shift, ctrl, alt, option as I'm used to
 - [x] Backspace in normal upper right
@@ -15,8 +19,10 @@ Swedish Qwerty for now.
 - [x] escape not working? hardware, bent pin
 - [x] Lock key
 - [x] switch layer key and space!
+- 
 - [ ] Think about how I want symbol layers
 - [ ] home row mods?
+- [ ] look into https://github.com/minusfive/zmk-config
 
 
 
