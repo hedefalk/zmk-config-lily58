@@ -14,12 +14,13 @@ Swedish Qwerty for now.
 - [x] add quote and question mark to raise
 - [x] escape not working? hardware, bent pin
 - [x] Lock key
-- [ ] numpad
+- [x] switch layer key and space!
 - [ ] Think about how I want symbol layers
 - [ ] home row mods?
 
 
 
+# Old
 ## Issues
 - [x] I'm having problems with the bootloader I think. NiceNano clones from https://www.aliexpress.com/item/1005006076173222.html?spm=a2g0o.order_list.order_list_main.119.4e981802ffEh3T
 
