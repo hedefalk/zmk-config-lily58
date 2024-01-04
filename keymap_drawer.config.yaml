@@ -167,7 +167,7 @@ parse_config:
       shifted: '´'
     BSPC: '⌫'
     RET: '⏎'
-    LBRC: 'Å'
+    LBKT: 'Å'
     SEMI: 'Ö'
     APOS: 'Ä'
     FSLH:
@@ -291,7 +291,6 @@ parse_config:
     PERIOD: .
     GREATER_THAN: '>'
     GT: '>'
-    LBKT: '['
     LEFT_BRACE: '{'
     RIGHT_BRACKET: ']'
     RBKT: ']'
