@@ -1,10 +1,14 @@
 <svg width="984" height="1176" viewBox="0 0 984 1176" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
+<svg id="mdi:apple-keyboard-option">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
+</svg>
 <svg id="mdi:lock">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock" viewBox="0 0 24 24"><path d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z" /></svg>
 </svg>
 </defs>/* end glyphs */
-<style>/* inherit to force styles through use tags */
+<style>
+/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
 }
@@ -12,7 +16,7 @@ svg path {
 /* font and background color specifications */
 svg.keymap {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    font-size: 14px;
+    font-size: 16px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
     fill: #24292e;
@@ -314,7 +318,7 @@ path.combo {
 </g>
 <g transform="translate(168, 259)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌥</text>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-option"/>
 </g>
 <g transform="translate(224, 260)" class="key keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -354,7 +358,7 @@ path.combo {
 <path d="M462,266 l-163,0" class="combo"/>
 <path d="M462,266 l163,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
-<text x="462" y="266" class="combo tap">Numpad</text>
+<text x="462" y="266" class="combo tap">Num</text>
 </g>
 </g>
 </g>
@@ -606,7 +610,7 @@ path.combo {
 <path d="M462,266 l-163,0" class="combo"/>
 <path d="M462,266 l163,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
-<text x="462" y="266" class="combo tap">Numpad</text>
+<text x="462" y="266" class="combo tap">Num</text>
 </g>
 </g>
 </g>
@@ -879,7 +883,7 @@ path.combo {
 <path d="M462,266 l-163,0" class="combo"/>
 <path d="M462,266 l163,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
-<text x="462" y="266" class="combo tap">Numpad</text>
+<text x="462" y="266" class="combo tap">Num</text>
 </g>
 </g>
 </g>

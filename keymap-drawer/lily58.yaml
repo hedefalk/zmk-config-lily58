@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
   default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ⌫, TAB, Q, W, E, R, T, Y, U, I, O, P, Å, LEFT SHIFT, A, S, D, F, G, H, J, K, L, Ö, Ä, LEFT CONTROL,
-    Z, X, C, V, B, '[', ']', N, M, ',', ., /, ⏎, ⌥, ⌘, layer2, ⏎, numpad, ␣, numpad, ␣]
+    Z, X, C, V, B, '[', ']', N, M, ',', ., /, ⏎, '$$mdi:apple-keyboard-option$$', ⌘, layer2, ⏎, numpad, ␣, numpad, ␣]
   layer2:
   - DEL
   - F1
@@ -126,4 +126,4 @@ combos:
   a: top
   o: 0.5
 - p: [52, 55]
-  k: Numpad
+  k: Num
