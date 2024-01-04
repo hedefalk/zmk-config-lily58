@@ -28,6 +28,7 @@ draw_config:
     rx: 4
     ry: 4
   svg_style: |
+  
     /* inherit to force styles through use tags */
     svg path {
         fill: inherit;
@@ -36,7 +37,7 @@ draw_config:
     /* font and background color specifications */
     svg.keymap {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-        font-size: 14px;
+        font-size: 16px;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
         fill: #24292e;
@@ -144,8 +145,10 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map: 
-    "&tog Numpad": Numpad
+    "&tog Numpad": Num
     "&kp LG(LC(Q))": $$mdi:lock$$
+    
+    
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
@@ -169,11 +172,24 @@ parse_config:
     LEFT_BRACKET: 'Å'
     SEMICOLON: 'Ö'
     QUOTE: 'Ä'
+    
+    # Modifiers
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCMD: $$mdi:apple-keyboard-command$$
+
+
     EXCLAMATION: '!'
     EXCL: '!'
     SPACE: '␣'
     LGUI: '⌘'
-    LALT: '⌥'
     AT_SIGN: '@'
     AT: '@'
     HASH: '#'
