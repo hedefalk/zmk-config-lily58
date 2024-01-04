@@ -60,7 +60,7 @@ layers:
   - layer2
   - ␣
   layer2:
-  - DEL
+  - ESC
   - F1
   - F2
   - F3
@@ -71,7 +71,7 @@ layers:
   - F8
   - F9
   - F10
-  - F11
+  - DEL
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: ▽, type: trans}
@@ -85,11 +85,11 @@ layers:
   - {t: +, s: '?'}
   - {t: '`', s: ´}
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - /
   - '*'
-  - {t: +, s: '?'}
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
