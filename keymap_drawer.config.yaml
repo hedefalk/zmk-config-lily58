@@ -231,6 +231,10 @@ parse_config:
     NUHS: '#'
     TILDE2: '~'
   zmk_combos: 
-    - {"combo_lock": {"align": "top", "offset": 0.5}}
-    - {"toggle_lower": {"align": "top", "offset": 0.5}}
+    combo_lock: 
+      align: top
+      offset: 0.5
+    toggle_lower:
+      align: top
+      offset: 0.5
   
