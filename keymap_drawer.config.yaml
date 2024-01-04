@@ -204,7 +204,7 @@ parse_config:
       shifted: '/'
     N8:
       tap: '8'  
-      shifted: '()'
+      shifted: '('
     N9:
       tap: '9'  
       shifted: ')'
