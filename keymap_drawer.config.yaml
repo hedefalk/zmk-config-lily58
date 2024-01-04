@@ -152,8 +152,24 @@ parse_config:
   mark_alternate_layer_activators: false
   zmk_remove_keycode_prefix: []
   zmk_keycode_map:
+    # SE_se in software
+    SV_A_RING: 'Å'
+    SV_A_UMLAUT: 'Ä'
+    SV_O_UMLAUT: 'Ö'
+    MINUS:
+      tap: "+"
+      shifted: "?"
+    BACKSLASH:
+      tap: "`"
+      shifted: "´"
+    BSPC: '⌫'
+    RET: '⏎'
+      
     EXCLAMATION: '!'
     EXCL: '!'
+    SPACE: '␣'
+    LGUI: '⌘'
+    LALT: '⌥'
     AT_SIGN: '@'
     AT: '@'
     HASH: '#'
@@ -174,14 +190,12 @@ parse_config:
     RPAR: )
     EQUAL: '='
     PLUS: +
-    MINUS: '-'
     UNDERSCORE: _
     UNDER: _
     SLASH: /
     FSLH: /
     QUESTION: '?'
     QMARK: '?'
-    BACKSLASH: \
     BSLH: \
     PIPE: '|'
     NON_US_BACKSLASH: \
@@ -216,4 +230,7 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-  zmk_combos: {}
+  zmk_combos: 
+    - {"combo_lock": {"align": "top", "offset": 0.5}}
+    - {"toggle_lower": {"align": "top", "offset": 0.5}}
+  
