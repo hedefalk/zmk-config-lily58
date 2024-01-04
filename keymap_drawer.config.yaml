@@ -169,9 +169,12 @@ parse_config:
       shifted: "´"
     BSPC: '⌫'
     RET: '⏎'
-    LEFT_BRACKET: 'Å'
-    SEMICOLON: 'Ö'
-    QUOTE: 'Ä'
+    LBRC: 'Å'
+    SEMI: 'Ö'
+    APOS: 'Ä'
+    FSLH:
+      tap: '-'
+      shifted: '_'
     
     # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
