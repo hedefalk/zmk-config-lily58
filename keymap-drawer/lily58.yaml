@@ -1,7 +1,8 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ⌫, TAB, Q, W, E, R, T, Y, U, I, O, P, Å, LEFT SHIFT, A, S, D, F, G, H, J, K, L, Ö, Ä, LEFT CONTROL,
-    Z, X, C, V, B, '[', ']', N, M, ',', ., /, ⏎, '$$mdi:apple-keyboard-option$$', ⌘, layer2, ⏎, numpad, ␣, numpad, ␣]
+  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ⌫, TAB, Q, W, E, R, T, Y, U, I, O, P, '{', '$$mdi:apple-keyboard-shift$$', A, S, D, F, G, H, J,
+    K, L, ;, '''', '$$mdi:apple-keyboard-control$$', Z, X, C, V, B, '[', ']', N, M, ',', ., /, ⏎, '$$mdi:apple-keyboard-option$$', ⌘, layer2, ⏎, numpad, ␣, numpad,
+    ␣]
   layer2:
   - DEL
   - F1
@@ -34,10 +35,10 @@ layers:
   - $
   - '%'
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - '~'
   - {t: ▽, type: trans}
   - <
@@ -69,8 +70,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP DIVIDE
-  - KP MULTIPLY
+  - /
+  - '*'
   - {t: +, s: '?'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,9 +81,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 7
-  - KP 8
-  - KP 9
+  - '7'
+  - '8'
+  - '9'
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -92,9 +93,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 4
-  - KP 5
-  - KP 6
+  - '4'
+  - '5'
+  - '6'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -106,9 +107,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 1
-  - KP 2
-  - KP 3
+  - '1'
+  - '2'
+  - '3'
   - ⏎
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - KP 0
+  - '0'
   - ','
   - .
 combos:
