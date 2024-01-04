@@ -1,9 +1,9 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
   default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ⌫, TAB, Q, W, E, R, T, Y, U, I, O, P, Å, LEFT SHIFT, A, S, D, F, G, H, J, K, L, Ö, Ä, LEFT CONTROL,
-    Z, X, C, V, B, '[', ']', N, M, ',', ., /, ⏎, ⌥, ⌘, lower, ⏎, raise, ␣, raise, ␣]
-  lower:
-  - {t: ▽, type: trans}
+    Z, X, C, V, B, '[', ']', N, M, ',', ., /, ⏎, ⌥, ⌘, layer2, ⏎, numpad, ␣, numpad, ␣]
+  layer2:
+  - DEL
   - F1
   - F2
   - F3
@@ -34,10 +34,10 @@ layers:
   - $
   - '%'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - (
-  - )
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - '~'
   - {t: ▽, type: trans}
   - <
@@ -48,8 +48,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
   - '{'
   - '}'
   - '|'
@@ -58,65 +58,6 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  raise:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DEL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP PLUS
-  - {t: +, s: '?'}
-  - '='
-  - '['
-  - ']'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -175,16 +116,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - KP 0
   - ','
   - .
 combos:
 - p: [0, 11]
-  k: LG(LC(Q))
+  k: $$mdi:lock$$
   a: top
   o: 0.5
 - p: [52, 55]
-  k: {t: numpad, h: toggle}
-  a: top
-  o: 0.5
+  k: Numpad
