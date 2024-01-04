@@ -197,21 +197,7 @@ path.combo {
 </g>
 <g transform="translate(896, 112)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-7.8em" style="font-size: 78%">(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">USAGE(HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">USAGE</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">KEY,</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">USAGE</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">KEY</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">KEYBOARD</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">LEFT</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">BRACKET</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">AND</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">LEFT</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">BRACE))</tspan>
-</text>
+<text x="0" y="0" class="key tap">Å</text>
 </g>
 <g transform="translate(28, 168)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -257,35 +243,11 @@ path.combo {
 </g>
 <g transform="translate(840, 161)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-6.6em" style="font-size: 78%">(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">USAGE(HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">USAGE</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">KEY,</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">USAGE</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">KEY</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">KEYBOARD</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">SEMICOLON</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">AND</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">COLON))</tspan>
-</text>
+<text x="0" y="0" class="key tap">Ö</text>
 </g>
 <g transform="translate(896, 168)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-6.6em" style="font-size: 70%">(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 70%">HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">USAGE(HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">USAGE</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">KEY,</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">HID</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">USAGE</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">KEY</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">KEYBOARD</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">APOSTROPHE</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">AND</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">QUOTE))</tspan>
-</text>
+<text x="0" y="0" class="key tap">Ä</text>
 </g>
 <g transform="translate(28, 224)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
