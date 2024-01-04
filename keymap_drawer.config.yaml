@@ -143,7 +143,9 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {}
+  raw_binding_map: 
+    "&tog Numpad": Numpad
+    "&kp LG(LC(Q))": $$mdi:lock$$
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
