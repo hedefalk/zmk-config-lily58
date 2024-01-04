@@ -160,11 +160,11 @@ parse_config:
     SV_A_UMLAUT: 'Ä'
     SV_O_UMLAUT: 'Ö'
     MINUS:
-      tap: "+"
-      shifted: "?"
+      tap: '+'
+      shifted: '?'
     BACKSLASH:
-      tap: "`"
-      shifted: "´"
+      tap: '`'
+      shifted: '´'
     BSPC: '⌫'
     RET: '⏎'
     LBRC: 'Å'
@@ -211,6 +211,7 @@ parse_config:
     N0:
       tap: '0'  
       shifted: '='
+    
       
 
     # Modifiers
@@ -237,6 +238,7 @@ parse_config:
     KP_N9: '9'
     KP_DIVIDE: '/'
     KP_MULTIPLY: '*'
+    KP_MINUS: '-'
 
     # Arrows
     UP: $$mdi:arrow-up-bold$$
