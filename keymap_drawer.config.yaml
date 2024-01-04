@@ -185,6 +185,24 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
 
+    KP_N0: '0'
+    KP_N1: '1'
+    KP_N2: '2'
+    KP_N3: '3'
+    KP_N4: '4'
+    KP_N5: '5'
+    KP_N6: '6'
+    KP_N7: '7'
+    KP_N8: '8'
+    KP_N9: '9'
+    KP_DIVIDE: '/'
+    KP_MULTIPLY: '*'
+
+    # Arrows
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
 
     EXCLAMATION: '!'
     EXCL: '!'
