@@ -1,8 +1,64 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ⌫, TAB, Q, W, E, R, T, Y, U, I, O, P, '{', '$$mdi:apple-keyboard-shift$$', A, S, D, F, G, H, J,
-    K, L, ;, '''', '$$mdi:apple-keyboard-control$$', Z, X, C, V, B, '[', ']', N, M, ',', ., /, ⏎, '$$mdi:apple-keyboard-option$$', ⌘, layer2, ⏎, layer2, ␣, layer2,
-    ␣]
+  default:
+  - ESC
+  - {t: '1', s: '!'}
+  - {t: '2', s: '"'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: €}
+  - {t: '5', s: '%'}
+  - {t: '6', s: '&'}
+  - {t: '7', s: /}
+  - {t: '8', s: ()}
+  - {t: '9', s: )}
+  - {t: '0', s: '='}
+  - ⌫
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - Å
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - Ö
+  - Ä
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '['
+  - ']'
+  - N
+  - M
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '-', s: _}
+  - ⏎
+  - $$mdi:apple-keyboard-option$$
+  - ⌘
+  - layer2
+  - ⏎
+  - layer2
+  - ␣
+  - layer2
+  - ␣
   layer2:
   - DEL
   - F1
@@ -51,7 +107,7 @@ layers:
   - {t: ▽, type: trans}
   - (
   - )
-  - '{'
+  - Å
   - '}'
   - '|'
   - {t: ▽, type: trans}
@@ -119,8 +175,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - ','
-  - .
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
 combos:
 - p: [0, 11]
   k: $$mdi:lock$$
