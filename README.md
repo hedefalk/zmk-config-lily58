@@ -1,10 +1,32 @@
 # Viktor's Lily58 Qwerty Swedish
 
-This is my ZMK config for my Lily58 keyboard.
+ZMK config for my Lily58 keyboard.
 
-Swedish Qwerty for now.
+## Spec:
+- 99% Mac
+- I'm a decent qwerty+se typer and I'm trying to not reset my muscle memory entirely for now. I have plans on going Colemak DH and change out symbols to something better, but for now I'm sticking with something as close to what I'm used to from Swedish Mac layout - which is actually pretty far from even swedish Windows for symbols in many ways.
+- I'm using Swedish locale in OS so the hardware codes are adapted for that. So the chart below is representing what I have _after_ software.
 
 
+## Workflow
+To understand what hardware codes actually represent what I get in my locale and what's actually printed on my swedish keyboards, I'm using karabiner eventviewer. So to configure a key that's not straightforward, I press it, see what I get in karabiner eventviewer and then try to look it up in zmk codes. For instance, the key for '<' and '>' is to the left of z on a swedish keyboard.
+
+![< and >](image-2.png)
+So I press it, see what the hardware code is in eventviewer:
+
+![eventviewer](eventviewer.png)
+
+And then I look it up on https://zmk.dev/docs/codes:
+
+![zmk code](image-1.png)
+
+In my lily layout, I don't have room for this key so I' gonna put it on the second layer for z and x. So that is:
+
+
+    &kp GRAVE     &kp LS(GRAVE)
+
+
+## Layout
 <img src="keymap-drawer/lily58.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
 
 
@@ -19,10 +41,9 @@ Swedish Qwerty for now.
 - [x] escape not working? hardware, bent pin
 - [x] Lock key
 - [x] switch layer key and space!
-- 
-- [ ] Think about how I want symbol layers
+- [x] Think about how I want symbol layers
+- [x] look into https://github.com/minusfive/zmk-config
 - [ ] home row mods?
-- [ ] look into https://github.com/minusfive/zmk-config
 
 
 
@@ -66,6 +87,7 @@ Use Karabiner EventViewer to find keycodes of everything I'm used to from anothe
 
 ## Lock cmd:
 This is the lock combo as programmed on logitech keyboard:
+
 
     [
       {
