@@ -162,9 +162,15 @@ parse_config:
     MINUS:
       tap: '+'
       shifted: '?'
-    BACKSLASH:
+    EQUAL:
       tap: '`'
       shifted: ´
+    RBRK:
+      tap: "¨"
+      shifted: '^' 
+    BACKSLASH:
+      tap: "'"
+      shifted: '*'
     GRAVE:
       tap: '<'
       shifted: '>'
@@ -182,6 +188,7 @@ parse_config:
     DOT:
       tap: '.'
       shifted: ':'
+
 
     # Number Row SE
     N1:
@@ -269,7 +276,6 @@ parse_config:
     LPAR: (
     RIGHT_PARENTHESIS: )
     RPAR: )
-    EQUAL: '='
     PLUS: +
     UNDERSCORE: _
     UNDER: _
