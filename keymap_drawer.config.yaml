@@ -165,6 +165,9 @@ parse_config:
     BACKSLASH:
       tap: '`'
       shifted: ´
+    GRAVE:
+      tap: '<'
+      shifted: '>'
     BSPC: '⌫'
     RET: '⏎'
     LBKT: 'Å'
@@ -294,7 +297,6 @@ parse_config:
     RBKT: ']'
     RIGHT_BRACE: '}'
     RBRC: '}'
-    GRAVE: '`'
     TILDE: '~'
     NON_US_HASH: '#'
     NUHS: '#'
