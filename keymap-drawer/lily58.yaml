@@ -44,7 +44,7 @@ layers:
   - V
   - B
   - Å
-  - ']'
+  - {t: ¨, s: ^}
   - N
   - M
   - {t: ',', s: ;}
@@ -95,10 +95,10 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - ']'
+  - {t: ¨, s: ^}
   - {t: ▽, type: trans}
   - {t: <, s: '>'}
-  - LS(GRAVE)
+  - '>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,7 +108,7 @@ layers:
   - (
   - )
   - LBRC
-  - '}'
+  - RBRC
   - {t: '''', s: '*'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
