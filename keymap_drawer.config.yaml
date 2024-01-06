@@ -164,7 +164,7 @@ parse_config:
       shifted: '?'
     BACKSLASH:
       tap: '`'
-      shifted: '´'
+      shifted: "\u00b4"
     BSPC: '⌫'
     RET: '⏎'
     LBKT: 'Å'
