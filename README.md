@@ -8,6 +8,12 @@ ZMK config for my Lily58 keyboard.
 - I'm using Swedish locale in OS so the hardware codes are adapted for that. So the chart below is representing what I have _after_ software.
 
 
+
+## Layout
+<img src="keymap-drawer/lily58.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
+
+
+
 ## Workflow
 To understand what hardware codes actually represent what I get in my locale and what's actually printed on my swedish keyboards, I'm using karabiner eventviewer. So to configure a key that's not straightforward, I press it, see what I get in karabiner eventviewer and then try to look it up in zmk codes. For instance, the key for '<' and '>' is to the left of z on a swedish keyboard.
 
@@ -24,10 +30,6 @@ In my lily layout, I don't have room for this key so I' gonna put it on the seco
 
 
     &kp GRAVE     &kp LS(GRAVE)
-
-
-## Layout
-<img src="keymap-drawer/lily58.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
 
 
 ## TODO
