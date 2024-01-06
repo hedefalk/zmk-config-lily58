@@ -164,7 +164,7 @@ parse_config:
       shifted: '?'
     BACKSLASH:
       tap: '`'
-      shifted: "\u00b4"
+      shifted: ´
     BSPC: '⌫'
     RET: '⏎'
     LBKT: 'Å'
@@ -212,8 +212,6 @@ parse_config:
       tap: '0'  
       shifted: '='
     
-      
-
     # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
     LALT: $$mdi:apple-keyboard-option$$
