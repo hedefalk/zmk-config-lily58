@@ -95,7 +95,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '~'
+  - ']'
   - {t: ▽, type: trans}
   - {t: <, s: '>'}
   - LS(GRAVE)
@@ -109,7 +109,7 @@ layers:
   - )
   - LBRC
   - '}'
-  - '|'
+  - {t: '''', s: '*'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
