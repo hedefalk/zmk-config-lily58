@@ -97,7 +97,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '~'
   - {t: ▽, type: trans}
-  - '`'
+  - {t: <, s: '>'}
   - LS(GRAVE)
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
