@@ -159,6 +159,9 @@ parse_config:
     SV_A_RING: 'Å'
     SV_A_UMLAUT: 'Ä'
     SV_O_UMLAUT: 'Ö'
+    LBKT: 'Å'
+    SEMI: 'Ö'
+    APOS: 'Ä'
     MINUS:
       tap: '+'
       shifted: '?'
@@ -178,9 +181,6 @@ parse_config:
       tap: '>'
     BSPC: '⌫'
     RET: '⏎'
-    LBKT: 'Å'
-    SEMI: 'Ö'
-    APOS: 'Ä'
     FSLH:
       tap: '-'
       shifted: '_'
