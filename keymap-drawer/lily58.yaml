@@ -196,18 +196,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - /
-  - '*'
-  - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
@@ -255,5 +243,5 @@ combos:
   o: 0.5
 - p: [52, 55]
   k: Num
-- p: [52, 55]
-  k: Num
+- p: [0, 12]
+  k: {t: colemak_dh, h: toggle}
