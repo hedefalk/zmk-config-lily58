@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
-  default:
+  qwerty:
   - ESC
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
@@ -43,8 +43,8 @@ layers:
   - C
   - V
   - B
-  - Å
-  - {t: ¨, s: ^}
+  - ␣
+  - ⌫
   - N
   - M
   - {t: ',', s: ;}
@@ -59,6 +59,65 @@ layers:
   - layer2
   - ⌫
   - ''
+  colemak_dh:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⌫
+  - {t: ▽, type: trans}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - Ö
+  - Å
+  - {t: ▽, type: trans}
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - Ä
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - K
+  - H
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '-', s: _}
+  - ⏎
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   layer2:
   - ESC
   - F1
@@ -105,10 +164,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - (
-  - )
-  - LBRC
-  - RBRC
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: '''', s: '*'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,6 +178,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   numpad:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - /
+  - '*'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -182,5 +253,7 @@ combos:
   k: $$mdi:lock$$
   a: top
   o: 0.5
+- p: [52, 55]
+  k: Num
 - p: [52, 55]
   k: Num
