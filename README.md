@@ -14,6 +14,37 @@ ZMK config for my Lily58 keyboard.
 
 
 
+## Tarmak progression → Colemak-DH
+
+The board mirrors the Tarmak progression I run in Kanata on the laptop's
+internal keyboard, so I can learn Colemak-DH on both at the same pace. The
+ISO **angle mod** is intentionally dropped here (the Lily58 is columnar, has
+no `<>` key, and no row stagger to compensate for); the **DH curl** is kept.
+The last step is identical to the `colemak_dh` layer.
+
+### Switching step
+
+1. Press **`ESC` + `TAB` together** — opens the hidden `SELECT` layer (the
+   nice!view shows `SELECT` so you know it's armed).
+2. Tap a **number** to jump to that layout (this also closes `SELECT`):
+
+   | Key | Layer       | Adds                                  |
+   |-----|-------------|---------------------------------------|
+   | `ESC` | QWERTY    | reset to QWERTY                       |
+   | `1` | Tarmak1a    | E, N → home                           |
+   | `2` | Tarmak1b    | + H→M curl swap                       |
+   | `3` | Tarmak2a    | + B/V relocation                      |
+   | `4` | Tarmak2b    | + T → home                            |
+   | `5` | Tarmak3     | + R, S, D placed (bottom row final)   |
+   | `6` | Tarmak4     | + O → home                            |
+   | `7` | Colemak-DH  | + L, U, I → full Colemak-DH           |
+
+Selection persists across disconnects (it resets to QWERTY on power-off /
+reflash). Opened `SELECT` by mistake? Press `ESC`+`TAB` again to close it.
+
+The active layer name is shown on the nice!view via each layer's
+`display-name` property.
+
 ## Workflow
 To understand what hardware codes actually represent what I get in my locale and what's actually printed on my swedish keyboards, I'm using karabiner eventviewer. So to configure a key that's not straightforward, I press it, see what I get in karabiner eventviewer and then try to look it up in zmk codes. For instance, the key for '<' and '>' is to the left of z on a swedish keyboard.
 

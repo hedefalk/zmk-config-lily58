@@ -28,6 +28,7 @@
         compatible = "zmk,keymap";
 
         qwerty {
+            display-name = "QWERTY";
             bindings = <
 &kp ESC     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                           &kp N6      &kp N7     &kp N8     &kp N9   &kp N0    &kp BSPC
 &kp TAB     &kp Q   &kp W   &kp E     &kp R     &kp T                            &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -37,7 +38,8 @@
             >;
         };
 
-        colemak_dh { 
+        colemak_dh {
+            display-name = "Colemak";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J       &kp L      &kp U      &kp Y    &kp SEMI  &kp LBKT
@@ -48,6 +50,7 @@
         };
 
         layer2 {
+            display-name = "Sym";
             bindings = <
 &kp ESC       &kp F1        &kp F2         &kp F3    &kp F4      &kp F5                       &kp F6     &kp F7     &kp F8     &kp F9    &kp F10      &kp DEL
 &bt BT_SEL 0  &bt BT_SEL 1  &trans         &trans    &trans      &trans                       &trans     &trans     &trans     &trans    &kp MINUS    &kp EQUAL
@@ -58,6 +61,7 @@
         };
 
         numpad_layer {
+            display-name = "Numpad";
             bindings = <
 &trans  &trans  &trans  &trans   &trans   &trans                     &trans       &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans    &trans
 &trans  &trans  &trans  &trans   &trans   &trans                     &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp PLUS      &trans    &trans
@@ -74,6 +78,7 @@
         // the Sel layer (combo ESC+TAB, then a number) -- see README.
 
         tarmak1a { // E>K>N>(J): E and N to home row
+            display-name = "Tarmak1a";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -84,6 +89,7 @@
         };
 
         tarmak1b { // + H>M curl swap
+            display-name = "Tarmak1b";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -94,6 +100,7 @@
         };
 
         tarmak2a { // + B/V relocation (Kanata's angle-mod step; angle itself dropped)
+            display-name = "Tarmak2a";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -104,6 +111,7 @@
         };
 
         tarmak2b { // + (J)>B>T>F: T to home row
+            display-name = "Tarmak2b";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp R     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -114,6 +122,7 @@
         };
 
         tarmak3 { // + (J)>R>S>D: R, S, D placed; bottom row final (DH curl)
+            display-name = "Tarmak3";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp J     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -124,6 +133,7 @@
         };
 
         tarmak4 { // + J>Y>O>;>P: O to home row
+            display-name = "Tarmak4";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J       &kp U      &kp I      &kp Y    &kp SEMI  &kp LBKT
@@ -137,8 +147,9 @@
         // the number-row keys to jump to that step (it auto-closes via &to):
         //   ESC=Qwerty  1=T1a  2=T1b  3=T2a  4=T2b  5=T3  6=T4  7=Colemak-DH
         sel {
+            display-name = "SELECT";
             bindings = <
-&to Qwerty  &to Tarmak1a  &to Tarmak1b  &to Tarmak2a  &to Tarmak2b  &to Tarmak3                    &to Tarmak4  &to ColeDH  &none   &none   &none   &none
+&to Qwerty  &to Tarmak1a  &to Tarmak1b  &to Tarmak2a  &to Tarmak2b  &to Tarmak3                    &to Tarmak4  &to ColeDH  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans       &trans      &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans       &trans      &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans   &trans       &trans     &trans      &trans      &trans  &trans  &trans  &trans
