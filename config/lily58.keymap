@@ -39,7 +39,7 @@
         };
 
         colemak_dh {
-            display-name = "Colemak";
+            display-name = "CMK";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J       &kp L      &kp U      &kp Y    &kp SEMI  &kp LBKT
@@ -61,7 +61,7 @@
         };
 
         numpad_layer {
-            display-name = "Numpad";
+            display-name = "Num";
             bindings = <
 &trans  &trans  &trans  &trans   &trans   &trans                     &trans       &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans    &trans
 &trans  &trans  &trans  &trans   &trans   &trans                     &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp PLUS      &trans    &trans
@@ -78,7 +78,7 @@
         // the Sel layer (combo ESC+TAB, then a number) -- see README.
 
         tarmak1a { // E>K>N>(J): E and N to home row
-            display-name = "Tarmak1a";
+            display-name = "T1a";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -89,7 +89,7 @@
         };
 
         tarmak1b { // + H>M curl swap
-            display-name = "Tarmak1b";
+            display-name = "T1b";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -100,7 +100,7 @@
         };
 
         tarmak2a { // + B/V relocation (Kanata's angle-mod step; angle itself dropped)
-            display-name = "Tarmak2a";
+            display-name = "T2a";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -111,7 +111,7 @@
         };
 
         tarmak2b { // + (J)>B>T>F: T to home row
-            display-name = "Tarmak2b";
+            display-name = "T2b";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp R     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -122,7 +122,7 @@
         };
 
         tarmak3 { // + (J)>R>S>D: R, S, D placed; bottom row final (DH curl)
-            display-name = "Tarmak3";
+            display-name = "T3";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp J     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
@@ -133,7 +133,7 @@
         };
 
         tarmak4 { // + J>Y>O>;>P: O to home row
-            display-name = "Tarmak4";
+            display-name = "T4";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J       &kp U      &kp I      &kp Y    &kp SEMI  &kp LBKT
@@ -147,7 +147,7 @@
         // the number-row keys to jump to that step (it auto-closes via &to):
         //   ESC=Qwerty  1=T1a  2=T1b  3=T2a  4=T2b  5=T3  6=T4  7=Colemak-DH
         sel {
-            display-name = "SELECT";
+            display-name = "SEL";
             bindings = <
 &to Qwerty  &to Tarmak1a  &to Tarmak1b  &to Tarmak2a  &to Tarmak2b  &to Tarmak3                    &to Tarmak4  &to ColeDH  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans       &trans      &trans  &trans  &trans  &trans

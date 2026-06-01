@@ -25,7 +25,7 @@ The last step is identical to the `colemak_dh` layer.
 ### Switching step
 
 1. Press **`ESC` + `TAB` together** — opens the hidden `SELECT` layer (the
-   nice!view shows `SELECT` so you know it's armed).
+   nice!view shows `SEL` so you know it's armed).
 2. Tap a **number** to jump to that layout (this also closes `SELECT`):
 
    | Key | Layer       | Adds                                  |
@@ -42,8 +42,10 @@ The last step is identical to the `colemak_dh` layer.
 Selection persists across disconnects (it resets to QWERTY on power-off /
 reflash). Opened `SELECT` by mistake? Press `ESC`+`TAB` again to close it.
 
-The active layer name is shown on the nice!view via each layer's
-`display-name` property.
+The active layer is shown on the nice!view via each layer's `display-name`.
+The labels are kept short because the nice!view layer field is only ~5–6
+characters wide and truncates the right edge: `QWERTY`, `T1a` `T1b` `T2a`
+`T2b` `T3` `T4`, `CMK`, `Sym`, `Num`, `SEL`.
 
 ## Workflow
 To understand what hardware codes actually represent what I get in my locale and what's actually printed on my swedish keyboards, I'm using karabiner eventviewer. So to configure a key that's not straightforward, I press it, see what I get in karabiner eventviewer and then try to look it up in zmk codes. For instance, the key for '<' and '>' is to the left of z on a swedish keyboard.
