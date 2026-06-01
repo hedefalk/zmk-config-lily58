@@ -127,8 +127,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-qwerty">
-<text x="0" y="28" class="label" id="qwerty">qwerty:</text>
+<g transform="translate(30, 0)" class="layer-QWERTY">
+<text x="0" y="28" class="label" id="QWERTY">QWERTY:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -353,8 +353,8 @@ path.combo {
 </g>
 <g transform="translate(280, 266)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#layer2">
-<text x="0" y="0" class="key tap layer-activator">layer2</text>
+<a href="#Sym">
+<text x="0" y="0" class="key tap layer-activator">Sym</text>
 </a></g>
 <g transform="translate(350, 266) rotate(30.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -366,8 +366,8 @@ path.combo {
 </g>
 <g transform="translate(644, 266)" class="key keypos-55">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#layer2">
-<text x="0" y="0" class="key tap layer-activator">layer2</text>
+<a href="#Sym">
+<text x="0" y="0" class="key tap layer-activator">Sym</text>
 </a></g>
 <g transform="translate(700, 260)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -390,14 +390,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 386)" class="layer-colemak_dh">
-<text x="0" y="28" class="label" id="colemak_dh">colemak_dh:</text>
+<g transform="translate(30, 386)" class="layer-Colemak">
+<text x="0" y="28" class="label" id="Colemak">Colemak:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -646,14 +646,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 773)" class="layer-layer2">
-<text x="0" y="28" class="label" id="layer2">layer2:</text>
+<g transform="translate(30, 773)" class="layer-Sym">
+<text x="0" y="28" class="label" id="Sym">Sym:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -903,14 +903,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 1159)" class="layer-numpad">
-<text x="0" y="28" class="label" id="numpad">numpad:</text>
+<g transform="translate(30, 1159)" class="layer-Numpad">
+<text x="0" y="28" class="label" id="Numpad">Numpad:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1160,14 +1160,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 1545)" class="layer-tarmak1a">
-<text x="0" y="28" class="label" id="tarmak1a">tarmak1a:</text>
+<g transform="translate(30, 1545)" class="layer-Tarmak1a">
+<text x="0" y="28" class="label" id="Tarmak1a">Tarmak1a:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1416,14 +1416,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 1932)" class="layer-tarmak1b">
-<text x="0" y="28" class="label" id="tarmak1b">tarmak1b:</text>
+<g transform="translate(30, 1932)" class="layer-Tarmak1b">
+<text x="0" y="28" class="label" id="Tarmak1b">Tarmak1b:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1672,14 +1672,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 2318)" class="layer-tarmak2a">
-<text x="0" y="28" class="label" id="tarmak2a">tarmak2a:</text>
+<g transform="translate(30, 2318)" class="layer-Tarmak2a">
+<text x="0" y="28" class="label" id="Tarmak2a">Tarmak2a:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1928,14 +1928,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 2705)" class="layer-tarmak2b">
-<text x="0" y="28" class="label" id="tarmak2b">tarmak2b:</text>
+<g transform="translate(30, 2705)" class="layer-Tarmak2b">
+<text x="0" y="28" class="label" id="Tarmak2b">Tarmak2b:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2184,14 +2184,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 3091)" class="layer-tarmak3">
-<text x="0" y="28" class="label" id="tarmak3">tarmak3:</text>
+<g transform="translate(30, 3091)" class="layer-Tarmak3">
+<text x="0" y="28" class="label" id="Tarmak3">Tarmak3:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2440,14 +2440,14 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 3477)" class="layer-tarmak4">
-<text x="0" y="28" class="label" id="tarmak4">tarmak4:</text>
+<g transform="translate(30, 3477)" class="layer-Tarmak4">
+<text x="0" y="28" class="label" id="Tarmak4">Tarmak4:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2696,74 +2696,78 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 3864)" class="layer-sel">
-<text x="0" y="28" class="label" id="sel">sel:</text>
+<g transform="translate(30, 3864)" class="layer-SELECT">
+<text x="0" y="28" class="label" id="SELECT">SELECT:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#qwerty">
-<text x="0" y="0" class="key tap layer-activator">qwerty</text>
+<a href="#QWERTY">
+<text x="0" y="0" class="key tap layer-activator">QWERTY</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#tarmak1a">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">tarmak1a</tspan></text>
+<a href="#Tarmak1a">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Tarmak1a</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#tarmak1b">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">tarmak1b</tspan></text>
+<a href="#Tarmak1b">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Tarmak1b</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#tarmak2a">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">tarmak2a</tspan></text>
+<a href="#Tarmak2a">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Tarmak2a</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#tarmak2b">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">tarmak2b</tspan></text>
+<a href="#Tarmak2b">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Tarmak2b</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#tarmak3">
-<text x="0" y="0" class="key tap layer-activator">tarmak3</text>
+<a href="#Tarmak3">
+<text x="0" y="0" class="key tap layer-activator">Tarmak3</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(616, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#tarmak4">
-<text x="0" y="0" class="key tap layer-activator">tarmak4</text>
+<a href="#Tarmak4">
+<text x="0" y="0" class="key tap layer-activator">Tarmak4</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(672, 35)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#colemak_dh">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 70%">colemak_dh</tspan></text>
+<a href="#Colemak">
+<text x="0" y="0" class="key tap layer-activator">Colemak</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
-<g transform="translate(728, 28)" class="key keypos-8">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(728, 28)" class="key trans keypos-8">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(784, 35)" class="key keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(784, 35)" class="key trans keypos-9">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(840, 49)" class="key keypos-10">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(840, 49)" class="key trans keypos-10">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(896, 56)" class="key keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(896, 56)" class="key trans keypos-11">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(28, 112)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2963,8 +2967,8 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
-<a href="#sel">
-<text x="28" y="84" class="combo tap layer-activator">sel</text>
+<a href="#SELECT">
+<text x="28" y="84" class="combo tap layer-activator">SELECT</text>
 </a><text x="28" y="95" class="combo hold">toggle</text>
 </g>
 </g>

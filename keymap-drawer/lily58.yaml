@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: lily58}
 layers:
-  qwerty:
+  QWERTY:
   - ESC
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
@@ -53,13 +53,13 @@ layers:
   - ⏎
   - $$mdi:apple-keyboard-option$$
   - ⌘
-  - layer2
+  - Sym
   - ⏎
   - ␣
-  - layer2
+  - Sym
   - ⌫
   - ''
-  colemak_dh:
+  Colemak:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  layer2:
+  Sym:
   - ESC
   - F1
   - F2
@@ -177,7 +177,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  numpad:
+  Numpad:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,7 +236,7 @@ layers:
   - '0'
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  tarmak1a:
+  Tarmak1a:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -295,7 +295,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  tarmak1b:
+  Tarmak1b:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -354,7 +354,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  tarmak2a:
+  Tarmak2a:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -413,7 +413,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  tarmak2b:
+  Tarmak2b:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -472,7 +472,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  tarmak3:
+  Tarmak3:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -531,7 +531,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  tarmak4:
+  Tarmak4:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -590,19 +590,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  sel:
-  - {t: qwerty, h: toggle}
-  - {t: tarmak1a, h: toggle}
-  - {t: tarmak1b, h: toggle}
-  - {t: tarmak2a, h: toggle}
-  - {t: tarmak2b, h: toggle}
-  - {t: tarmak3, h: toggle}
-  - {t: tarmak4, h: toggle}
-  - {t: colemak_dh, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
+  SELECT:
+  - {t: QWERTY, h: toggle}
+  - {t: Tarmak1a, h: toggle}
+  - {t: Tarmak1b, h: toggle}
+  - {t: Tarmak2a, h: toggle}
+  - {t: Tarmak2b, h: toggle}
+  - {t: Tarmak3, h: toggle}
+  - {t: Tarmak4, h: toggle}
+  - {t: Colemak, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -657,4 +657,4 @@ combos:
 - p: [52, 55]
   k: Num
 - p: [0, 12]
-  k: {t: sel, h: toggle}
+  k: {t: SELECT, h: toggle}
