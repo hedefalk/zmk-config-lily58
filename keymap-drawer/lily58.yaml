@@ -59,7 +59,7 @@ layers:
   - Sym
   - ⌫
   - ''
-  Colemak:
+  CMK:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,7 +177,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Numpad:
+  Num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,7 +236,7 @@ layers:
   - '0'
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  Tarmak1a:
+  T1a:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -295,7 +295,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Tarmak1b:
+  T1b:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -354,7 +354,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Tarmak2a:
+  T2a:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -413,7 +413,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Tarmak2b:
+  T2b:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -472,7 +472,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Tarmak3:
+  T3:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -531,7 +531,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Tarmak4:
+  T4:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -590,15 +590,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SELECT:
+  SEL:
   - {t: QWERTY, h: toggle}
-  - {t: Tarmak1a, h: toggle}
-  - {t: Tarmak1b, h: toggle}
-  - {t: Tarmak2a, h: toggle}
-  - {t: Tarmak2b, h: toggle}
-  - {t: Tarmak3, h: toggle}
-  - {t: Tarmak4, h: toggle}
-  - {t: Colemak, h: toggle}
+  - {t: T1a, h: toggle}
+  - {t: T1b, h: toggle}
+  - {t: T2a, h: toggle}
+  - {t: T2b, h: toggle}
+  - {t: T3, h: toggle}
+  - {t: T4, h: toggle}
+  - {t: CMK, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -657,4 +657,4 @@ combos:
 - p: [52, 55]
   k: Num
 - p: [0, 12]
-  k: {t: SELECT, h: toggle}
+  k: {t: SEL, h: toggle}
