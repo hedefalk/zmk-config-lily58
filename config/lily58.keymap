@@ -26,34 +26,55 @@
 #define SV_PLUS_
 / {
     behaviors {
-        // Cmd/Ctrl shortcut exceptions (mirrors Kanata qwerty-cmd / qwerty-ctrl).
-        // z/x/c never move in this Colemak-DH progression, so Cmd+Z/X/C already
-        // work. Only physical-v (-> d) and physical-e (-> f) need rescuing:
-        //   - under Cmd OR Ctrl: physical-v sends V (Cmd/Ctrl+V = paste; real mod kept)
-        //   - under Ctrl only:   physical-e sends E (Ctrl+E = end-of-line). Cmd keeps F
-        //                        so Cmd+F still works -- matching the Kanata setup.
-        // The first binding is the layer's normal letter, so each Tarmak step uses
-        // the morph whose default matches its v/e output.
-        cv_d: cmd_ctrl_v_from_d {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp D>, <&kp V>;
-            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        // Cmd/Ctrl shortcut cluster, shifted one column RIGHT of the keycaps.
+        // Kanata pins grv+z/x/c/v under Cmd/Ctrl on the ISO board, where the extra
+        // <> key sits left of Z. The ortho Lily58 lacks that key, so the cluster
+        // slides right by one to stay under the same fingers:
+        //   physical  Z  X  C  V  B   ->   `  Z  X  C  V   (only while Cmd or Ctrl held)
+        //   = cmd-` (cycle windows), undo, cut, copy, paste.
+        // First binding = the layer's normal letter; second = the shifted shortcut.
+        // physical-V's normal letter varies per Tarmak step -> sft_v_{v,b,j,d}.
+        // physical-B already types v from step 2a on (plain &kp V there = paste);
+        // sft_b_b covers steps 1a/1b where it still types b.
+        sft_z: sft_z {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
         };
-        cv_b: cmd_ctrl_v_from_b {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
+        sft_x: sft_x {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            bindings = <&kp X>, <&kp Z>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        sft_c: sft_c {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            bindings = <&kp C>, <&kp X>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        sft_v_v: sft_v_v {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            bindings = <&kp V>, <&kp C>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        sft_v_b: sft_v_b {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            bindings = <&kp B>, <&kp C>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        sft_v_j: sft_v_j {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            bindings = <&kp J>, <&kp C>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        sft_v_d: sft_v_d {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            bindings = <&kp D>, <&kp C>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        sft_b_b: sft_b_b {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
             bindings = <&kp B>, <&kp V>;
-            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
-        };
-        cv_j: cmd_ctrl_v_from_j {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&kp V>;
-            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
         };
         ce_f: ctrl_e_from_f {
             compatible = "zmk,behavior-mod-morph";
@@ -91,7 +112,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &ce_f     &kp P     &kp B                           &kp J       &kp L      &kp U      &kp Y    &kp SEMI  &kp LBKT
 &trans  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp I    &kp O     &kp APOS
-&trans  &kp Z   &kp X   &kp C     &cv_d     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &sft_z  &sft_x  &sft_c    &sft_v_d  &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans 
             >;
         };
@@ -130,7 +151,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &ce_j     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp H       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &kp V     &kp B   &trans       &trans     &kp K       &kp M      &trans     &trans   &kp FSLH  &kp RET
+&trans  &sft_z  &sft_x  &sft_c    &sft_v_v  &sft_b_b &trans      &trans     &kp K       &kp M      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -141,7 +162,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &ce_j     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &kp V     &kp B   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &sft_z  &sft_x  &sft_c    &sft_v_v  &sft_b_b &trans      &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -152,7 +173,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &ce_j     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &cv_b     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &sft_z  &sft_x  &sft_c    &sft_v_b  &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -163,7 +184,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &ce_f     &kp R     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &cv_j     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &sft_z  &sft_x  &sft_c    &sft_v_j  &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -174,7 +195,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &ce_f     &kp J     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &cv_d     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &sft_z  &sft_x  &sft_c    &sft_v_d  &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -185,7 +206,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
 &trans  &kp Q   &kp W   &ce_f     &kp P     &kp B                           &kp J       &kp U      &kp I      &kp Y    &kp SEMI  &kp LBKT
 &trans  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp O     &kp APOS
-&trans  &kp Z   &kp X   &kp C     &cv_d     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &sft_z  &sft_x  &sft_c    &sft_v_d  &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
