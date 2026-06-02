@@ -97,10 +97,10 @@ layers:
   - O
   - Ä
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - {t: D, s: V}
+  - {t: Z, s: <}
+  - {t: X, s: Z}
+  - {t: C, s: X}
+  - {t: D, s: C}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -274,11 +274,11 @@ layers:
   - Ö
   - Ä
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - {t: Z, s: <}
+  - {t: X, s: Z}
+  - {t: C, s: X}
+  - {t: V, s: C}
+  - {t: B, s: V}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - K
@@ -333,11 +333,11 @@ layers:
   - Ö
   - Ä
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - {t: Z, s: <}
+  - {t: X, s: Z}
+  - {t: C, s: X}
+  - {t: V, s: C}
+  - {t: B, s: V}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - K
@@ -392,10 +392,10 @@ layers:
   - Ö
   - Ä
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - {t: B, s: V}
+  - {t: Z, s: <}
+  - {t: X, s: Z}
+  - {t: C, s: X}
+  - {t: B, s: C}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -451,10 +451,10 @@ layers:
   - Ö
   - Ä
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - {t: J, s: V}
+  - {t: Z, s: <}
+  - {t: X, s: Z}
+  - {t: C, s: X}
+  - {t: J, s: C}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -510,10 +510,10 @@ layers:
   - Ö
   - Ä
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - {t: D, s: V}
+  - {t: Z, s: <}
+  - {t: X, s: Z}
+  - {t: C, s: X}
+  - {t: D, s: C}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -569,10 +569,10 @@ layers:
   - O
   - Ä
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - {t: D, s: V}
+  - {t: Z, s: <}
+  - {t: X, s: Z}
+  - {t: C, s: X}
+  - {t: D, s: C}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
