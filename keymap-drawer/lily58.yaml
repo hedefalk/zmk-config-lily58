@@ -75,7 +75,7 @@ layers:
   - {t: ▽, type: trans}
   - Q
   - W
-  - F
+  - {t: F, s: E}
   - P
   - B
   - J
@@ -100,7 +100,7 @@ layers:
   - Z
   - X
   - C
-  - D
+  - {t: D, s: V}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -252,7 +252,7 @@ layers:
   - {t: ▽, type: trans}
   - Q
   - W
-  - J
+  - {t: J, s: E}
   - R
   - T
   - Y
@@ -311,7 +311,7 @@ layers:
   - {t: ▽, type: trans}
   - Q
   - W
-  - J
+  - {t: J, s: E}
   - R
   - T
   - Y
@@ -370,7 +370,7 @@ layers:
   - {t: ▽, type: trans}
   - Q
   - W
-  - J
+  - {t: J, s: E}
   - R
   - T
   - Y
@@ -395,7 +395,7 @@ layers:
   - Z
   - X
   - C
-  - B
+  - {t: B, s: V}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -429,7 +429,7 @@ layers:
   - {t: ▽, type: trans}
   - Q
   - W
-  - F
+  - {t: F, s: E}
   - R
   - B
   - Y
@@ -454,7 +454,7 @@ layers:
   - Z
   - X
   - C
-  - J
+  - {t: J, s: V}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -488,7 +488,7 @@ layers:
   - {t: ▽, type: trans}
   - Q
   - W
-  - F
+  - {t: F, s: E}
   - J
   - B
   - Y
@@ -513,7 +513,7 @@ layers:
   - Z
   - X
   - C
-  - D
+  - {t: D, s: V}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -547,7 +547,7 @@ layers:
   - {t: ▽, type: trans}
   - Q
   - W
-  - F
+  - {t: F, s: E}
   - P
   - B
   - J
@@ -572,7 +572,7 @@ layers:
   - Z
   - X
   - C
-  - D
+  - {t: D, s: V}
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
