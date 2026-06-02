@@ -8,6 +8,7 @@
 #include "keys_sv.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/modifiers.h>
 
 // Layers
 #define Qwerty 0
@@ -24,6 +25,52 @@
 
 #define SV_PLUS_
 / {
+    behaviors {
+        // Cmd/Ctrl shortcut exceptions (mirrors Kanata qwerty-cmd / qwerty-ctrl).
+        // z/x/c never move in this Colemak-DH progression, so Cmd+Z/X/C already
+        // work. Only physical-v (-> d) and physical-e (-> f) need rescuing:
+        //   - under Cmd OR Ctrl: physical-v sends V (Cmd/Ctrl+V = paste; real mod kept)
+        //   - under Ctrl only:   physical-e sends E (Ctrl+E = end-of-line). Cmd keeps F
+        //                        so Cmd+F still works -- matching the Kanata setup.
+        // The first binding is the layer's normal letter, so each Tarmak step uses
+        // the morph whose default matches its v/e output.
+        cv_d: cmd_ctrl_v_from_d {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp V>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        cv_b: cmd_ctrl_v_from_b {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp V>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        cv_j: cmd_ctrl_v_from_j {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp V>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL)>;
+        };
+        ce_f: ctrl_e_from_f {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp E>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        ce_j: ctrl_e_from_j {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp E>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,9 +89,9 @@
             display-name = "CMK";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
-&trans  &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J       &kp L      &kp U      &kp Y    &kp SEMI  &kp LBKT
+&trans  &kp Q   &kp W   &ce_f     &kp P     &kp B                           &kp J       &kp L      &kp U      &kp Y    &kp SEMI  &kp LBKT
 &trans  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp I    &kp O     &kp APOS
-&trans  &kp Z   &kp X   &kp C     &kp D     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &kp Z   &kp X   &kp C     &cv_d     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans 
             >;
         };
@@ -81,7 +128,7 @@
             display-name = "T1a";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
-&trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&trans  &kp Q   &kp W   &ce_j     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp H       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
 &trans  &kp Z   &kp X   &kp C     &kp V     &kp B   &trans       &trans     &kp K       &kp M      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
@@ -92,7 +139,7 @@
             display-name = "T1b";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
-&trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&trans  &kp Q   &kp W   &ce_j     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
 &trans  &kp Z   &kp X   &kp C     &kp V     &kp B   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
@@ -103,9 +150,9 @@
             display-name = "T2a";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
-&trans  &kp Q   &kp W   &kp J     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&trans  &kp Q   &kp W   &ce_j     &kp R     &kp T                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &kp B     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &kp Z   &kp X   &kp C     &cv_b     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -114,9 +161,9 @@
             display-name = "T2b";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
-&trans  &kp Q   &kp W   &kp F     &kp R     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&trans  &kp Q   &kp W   &ce_f     &kp R     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &kp J     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &kp Z   &kp X   &kp C     &cv_j     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -125,9 +172,9 @@
             display-name = "T3";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
-&trans  &kp Q   &kp W   &kp F     &kp J     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&trans  &kp Q   &kp W   &ce_f     &kp J     &kp B                           &kp Y       &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C     &kp D     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &kp Z   &kp X   &kp C     &cv_d     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
@@ -136,9 +183,9 @@
             display-name = "T4";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                          &trans      &trans     &trans     &trans   &trans    &kp BSPC
-&trans  &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J       &kp U      &kp I      &kp Y    &kp SEMI  &kp LBKT
+&trans  &kp Q   &kp W   &ce_f     &kp P     &kp B                           &kp J       &kp U      &kp I      &kp Y    &kp SEMI  &kp LBKT
 &trans  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M       &kp N      &kp E      &kp L    &kp O     &kp APOS
-&trans  &kp Z   &kp X   &kp C     &kp D     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
+&trans  &kp Z   &kp X   &kp C     &cv_d     &kp V   &trans       &trans     &kp K       &kp H      &trans     &trans   &kp FSLH  &kp RET
                         &trans    &trans    &trans  &trans       &trans     &trans      &trans     &trans
             >;
         };
